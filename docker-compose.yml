@@ -1,0 +1,21 @@
+---
+version: "3"
+services:
+  java:
+    image: saipavan12/nitjava:v1
+    ports:
+      - 8000:80
+    deploy:
+      replicas: 3
+  devops:
+    image: saipavan12/nitdevops:v1
+    ports:
+      - 8001:80
+    deploy:
+      replicas: 3
+  datascience:
+    image: saipavan12/nitdatascience:v1
+    ports:
+      - 8002:80
+    deploy:
+      replicas: 3
